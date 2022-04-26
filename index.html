@@ -7,23 +7,46 @@
   </head>
 
   <body>
-    <h1 id="title">Job Satisfaction Survey Form</h1>
-    <p id="description" class="description">This is a job satisfaction survey to determine your experience as an employee in this organization. Your reponses will remain anonymous, therefore, kindly respond as honestly as possible. </p>
-    
     <div class="form-holder">
       
+      <h1 id="title">Job Satisfaction Survey Form</h1>
+      <p id="description" class="description">This is a job satisfaction survey to determine your experience as an employee in this organization. Your reponses will remain anonymous, therefore, kindly respond as honestly as possible. </p>
+      
       <form id="survey-form">
-        <label>Enter your name: </label>
+       
+        <label id="name-label" for="name" class="label">Enter your name: </label>
          <input class="input" type="text" name="name" id="name" placeholder="Enter your name " required>
-         <label>Enter your email: </label>
+         
+         <label id="email-label"  for="email" class="label">Enter your email: </label>
          <input type="email" name="email" id="email" class="input" placeholder="Email" required>
-         <label>Enter your telephone number: </label>
+         
+         <label id="number-label" for="number" class="label">Enter your telephone number: </label>
          <input type="number" id="number" placeholder="Enter telephone number " class="input" required min="1000000000" max="9999999999">
-        <select name="gender" id="dropdown" class="input">
+        
+         <label for="dropdown" class="label">Select your Gender </label>
+         <select name="gender" id="dropdown" class="input">
+           <option value="" selected></option>
           <option value="male">male</option>
           <option value="female">female</option>
           <option value="other">prefer not to say</option>
         </select>
+
+        <label  class="qustLabel">Are you satisfied with your work environment ?</label>
+        <input class="answer" type="radio" value="yes" title="yes" name="animal" > 
+        <label class="answer">Yes</label>
+        <br>
+        <input class="answer" type="radio" value="no" title="no" name="animal"> 
+        <label class="answer">No</label><br>
+
+        <label class="answer">If you are ?</label><br>
+        <input class="answer" type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+        <label class="answer" for="vehicle1"> I have a bike</label><br>
+        <br>
+        <input class="answer" type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+        <label class="answer" for="vehicle1"> I have a bike</label><br>
+
+
+
          <button type="submit" class="submitButton"> Submit </button>
       </form>
     </div>
