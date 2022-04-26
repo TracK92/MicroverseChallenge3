@@ -1,0 +1,38 @@
+html{
+
+font-size: 62.5%;    
+}
+
+.form-holder{
+   width: 60%;
+   margin: auto;
+}
+
+.description{
+    font-size: 3rem;
+}
+
+.input{
+    width: 80%;
+    padding: 2rem 2rem ;
+    font-size: 1.5rem;
+    border-radius: 15px;
+    outline: 0;
+    margin: 2rem 0;
+}
+
+.submitButton{
+display: block;
+padding: 2rem;
+font-size: 2rem;
+border-radius: 30px;
+transition: 0.3s;
+
+}
+.submitButton:hover{
+    cursor: pointer;
+    background-color: purple;
+    color: white;
+    margin-left: 1rem;
+    
+}
