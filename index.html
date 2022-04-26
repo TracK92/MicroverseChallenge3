@@ -12,7 +12,7 @@
       <h1 id="title">Job Satisfaction Survey Form</h1>
       <p id="description" class="description">This is a job satisfaction survey to determine your experience as an employee in this organization. Your reponses will remain anonymous, therefore, kindly respond as honestly as possible. </p>
       
-      <form id="survey-form">
+      <form id="survey-form" >
        
         <label id="name-label" for="name" class="label">Enter your name: </label>
          <input class="input" type="text" name="name" id="name" placeholder="Enter your name " required>
@@ -51,11 +51,9 @@
 
         <label class="answer" for="comments">Add comments:</label>
 
-        <textarea class="input" id="comments" name="comments" rows="4" cols="50">
-        
-        </textarea> 
+        <textarea class="input answer" id="comments" name="comments" rows="4" cols="50"></textarea> 
 
-         <button type="submit" class="submitButton"> Submit </button>
+         <button type="submit" class="submitButton" id="submit"> Submit </button>
       </form>
     </div>
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
